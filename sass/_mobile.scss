@@ -1,0 +1,108 @@
+// Tabletler için
+@media (max-width: 768px) {
+
+}
+
+// Telefonlar için
+@media (max-width: 576px) {
+    html {
+        font-size: 13px;
+    }
+
+    .header-home {
+        padding: 1rem 0rem;
+        height: 120px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home {
+        &-start {
+            padding: 1.5rem;
+
+            h2 {
+                font-size: 3rem; 
+            }
+        }
+
+        &-a {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-b {
+            .most-popular-movies {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    .movies-slider .item {
+        height: calc(70vh);
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            width: 90%;
+            height: 50px;
+            bottom: 10px;
+            left: 10px;
+            text-align: center;
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .upcoming-movies {
+        .upcoming-movie-card {
+            grid-template-columns: 1fr;
+
+            .movie-datails {
+                margin: 1rem 0rem;
+                padding: 0.5rem 1rem;
+            }
+
+            img {
+                height: 50vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .movie-news {
+        .movie-new-cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .contact {
+        .form-elements {
+            display: flex;
+            flex-direction: column;
+            
+            .input-field, button {
+                margin: auto;
+                width: 90%;
+            }
+        }
+    }
+
+    .main-footer {
+        height: 8rem;
+        padding: 1.5rem 0rem;
+
+        .footer-content {
+            flex-direction: column;
+        }
+    }
+}

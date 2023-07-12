@@ -1,0 +1,42 @@
+.header-home {
+    height: 70px;
+}
+
+.main-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+
+    &-items {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            padding: 1rem 1.5rem;
+
+            a {
+                padding-bottom: 0.5rem;
+                color: #fff;
+                text-decoration: none;
+                border-bottom: 3px transparent solid;
+                transition: border-color 0.5s;
+
+                &:hover {
+                    font-weight: bold;
+                    border-color: $medium-color;
+                }
+                
+                &.active {
+                    font-weight: bold;
+                    border-color: $primary-color;
+                }
+            }
+        }
+    }
+}

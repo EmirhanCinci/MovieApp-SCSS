@@ -1,0 +1,65 @@
+.home {
+    &-start {
+        height: calc(100vh - 70px);
+        background: $bg-image-1 no-repeat center right/cover;
+
+        .header-content {
+            padding-top: 15%;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        .typewrite {
+            display: block;
+        }
+
+        .info {
+            display: inline-block;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    &-a {
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+
+            i {
+                color: $primary-color;
+                font-size: 3rem;
+            }
+
+            h3 {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+
+    &-b {
+        .most-popular-movies {
+            min-height: 50vh;
+            color: #fff;
+            border-radius: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+        }
+
+        .popular-movie .poster {
+            height: 50vh;
+            cursor: pointer;
+            border-radius: 18px;
+            object-fit: cover;
+            transition: all 0.8s;
+
+            &:hover {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}

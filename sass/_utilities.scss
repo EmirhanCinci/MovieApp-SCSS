@@ -1,0 +1,235 @@
+.container {
+    margin: auto;
+    padding: 0 1.4rem;
+    max-width: $max-width;
+    height: 100%;
+}
+
+// Butonlar
+%btn-shared {
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.8s ease-in-out;
+}
+
+.btn {
+    &-primary {
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $primary-color;
+
+        &:hover {
+            color: $primary-color;
+            background-color: $dark-color;
+        }
+    }
+
+    &-light {
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $light-color;
+
+        &:hover {
+            color: $light-color;
+            background-color: $dark-color;
+        }
+    }
+
+    &-medium {
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $medium-color;
+
+        &:hover {
+            color: $white-color;
+            background-color: $dark-color;
+        }
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        color: $white-color;
+        background-color: $dark-color;
+
+        &:hover {
+            color: $dark-color;
+            background-color: $white-color;
+        }
+    }
+} 
+
+// Arka plan renklendirme
+.bg {
+    &-primary {
+        background-color: $primary-color;
+    }
+
+    &-light {
+        background-color: $light-color;
+    }
+
+    &-medium {
+        background-color: $medium-color;
+    }
+
+    &-dark {
+        background-color: $dark-color;
+    }
+}
+
+// padding değerleri
+.p {
+    &-1 {
+        padding: 1rem;
+    }
+
+    &-2 {
+        padding: 2rem;
+    }
+
+    &-3 {
+        padding: 3rem;
+    }
+
+    &-4 {
+        padding: 4rem;
+    }
+}
+
+// padding-top ve padding-bottom değerleri
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+
+    &-2 {
+        padding: 2rem 0;
+    }
+
+    &-3 {
+        padding: 3rem 0;
+    }
+
+    &-4 {
+        padding: 4rem 0;
+    }
+}
+
+// padding-right ve padding-left değerleri
+.px {
+    &-1 {
+        padding: 0 1rem;
+    }
+
+    &-2 {
+        padding: 0 2rem;
+    }
+
+    &-3 {
+        padding: 0 3rem;
+    }
+
+    &-4 {
+        padding: 0 4rem;
+    }
+}
+
+// margin değerleri
+.m {
+    &-1 {
+        margin: 1rem;
+    }
+
+    &-2 {
+        margin: 2rem;
+    }
+
+    &-3 {
+        margin: 3rem;
+    }
+
+    &-4 {
+        margin: 4rem;
+    }
+}
+
+// margin-top ve margin-bottom değerleri
+.my {
+    &-1 {
+        margin: 1rem 0;
+    }
+
+    &-2 {
+        margin: 2rem 0;
+    }
+
+    &-3 {
+        margin: 3rem 0;
+    }
+
+    &-4 {
+        margin: 4rem 0;
+    }
+}
+
+// margin-right ve margin-left değerleri
+.mx {
+    &-1 {
+        margin: 0 1rem;
+    }
+
+    &-2 {
+        margin: 0 2rem;
+    }
+
+    &-3 {
+        margin: 0 3rem;
+    }
+
+    &-4 {
+        margin: 0 4rem;
+    }
+}
+
+// Metin hizalama değerleri
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+// Başlık etiketi stillendirme
+.section-title {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+// Önemli etiketlerin altını çizme stillendirmesi
+.border-bottom {
+    margin: 0 auto 1rem auto;
+    width: 5rem;
+    height: 3px;
+    background-color: $primary-color;
+}
+
+// Metinleri daha okunabilir hale getirmek için kullanılacak yapı
+.lead {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    word-spacing: 2px;
+}

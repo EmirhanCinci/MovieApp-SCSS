@@ -1,0 +1,80 @@
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.movies-slider {
+    .item {
+        position: relative;
+    }
+
+    .movie-info {
+        width: 50%;
+        padding: 15px;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        border-radius: 18px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+} 
+
+.upcoming-movies-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .upcoming-movie-card {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        img {
+            border-radius: 30px;
+            transition: all 0.8s ease-in-out;
+
+            &:hover {
+                transform: rotate(5deg) scale(1.05);
+            }
+        }
+    }
+}
+
+#owl-demo2 .item, #owl-demo3 .item{
+    margin: 3px;
+}
+
+#owl-demo2 .item img, #owl-demo3 .item img{
+    cursor: pointer;
+    display: block;
+    height: 250px;
+    transition: all 0.8s;
+
+    &:hover {
+        border-radius: 50%;
+        transform: scale(0.85);
+    }
+}
+
+.movie-new-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    .movie-new-card {
+        border-radius: 30px;
+        transition: all 0.8s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        img {
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
